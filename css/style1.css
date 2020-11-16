@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+    --header-font-weight: normal;
+}
+
+
+h1, h2 {
+    font-weight: var(--header-font-weight);
+}
 
 table {
     border-collapse: collapse;

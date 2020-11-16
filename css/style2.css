@@ -1,5 +1,13 @@
 @charset "UTF-8";
+:root {
+    --header-colour-scheme: #369;
+}
 
-h1 {
-    color: #369;
+
+h1, h2 {
+    color: var(--header-colour-scheme);
+}
+
+td {
+    padding: 0.5rem 0.25rem;
 }

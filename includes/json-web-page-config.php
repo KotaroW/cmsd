@@ -5,7 +5,7 @@ if (!defined('PLEASE_GIMME_THE_CONFIG')) exit;
 
     {
         "title" : {
-            "index" : "Json Test"
+            "index" : "A Small Test"
         },
         "icon" : "icon.ico",
         "meta" : {

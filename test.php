@@ -8,19 +8,33 @@ $webpage = new Web_Page('index', 'template');
 $max = rand(1, 10);
 $rows = [];
 
-for($index = 0; $index < $max; $index++) {
-    $rows[] = '<tr><td>' . ($index + 1) . '</td></tr>';
+for($rowindex = 0; $rowindex < $max; $rowindex++) {
+    $row = '<tr>';
+    for($cellindex = 0; $cellindex < $max; $cellindex++) {
+        $row .= '<td>Row: ' . strval($rowindex + 1) . ', Cell: ' . strval($rowindex + 1) . '</td>';
+    }
+    $row .= '</tr>';
+    
+    array_push($rows, $row);
 }
 
 
 $contents =<<<KOTAROW
-    <h1>This is a test</h1>
+    <h1>Demo</h1>
     <div>
         <p>This is a test.</p>
         <table border="1">
             %s
         </table>
     </div>
+    <div>
+        <p id="paragraph"></p>
+    </div>
+    <section>
+        <h2>Data Test</h2>
+        <div id="dataarea">
+        </div>
+    </section>
 KOTAROW;
 
 $contents = sprintf(
