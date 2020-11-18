@@ -8,11 +8,11 @@ This project is still in a rudimentary state. I will add more functionalities an
 The program stands on the below four pillars:
 1. class-web-page-config.php  
   A configuration getter. As the file naming might be confisuing or misleading, the file name will be changed in due course.
-2. json-web-page-config.php
+2. json-web-page-config.php  
   This is actually the configuration file. The configuration is stored in the JSON format in the PHP style. It could have been a JSON application file. 
-3. class-web-page.php
+3. class-web-page.php  
   A webpage builder. 
-4. class-template.php
+4. class-template.php  
  A template. This can be anything.
 
 ## Known Issue (like)
